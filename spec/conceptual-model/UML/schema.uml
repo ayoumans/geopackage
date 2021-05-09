@@ -1,4 +1,4 @@
-classDiagram
+@startuml
    class SchemaStore {
    }
    class AttributeType {
@@ -33,3 +33,4 @@ classDiagram
    Constraint ..> EntityStore
    SchemaStore o-- "*" EntityStore
    SchemaStore o-- "*" AttributeType
+@enduml

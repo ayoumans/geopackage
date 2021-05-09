@@ -1,4 +1,4 @@
-classDiagram
+@startuml
 
    class GeometryAttributeType {
      valueType = Geometry
@@ -56,4 +56,4 @@ classDiagram
    GeometryAttribute ..> GeometryAttributeType
    Feature o-- GeometryAttribute: geometry
    Attribute <|-- GeometryAttribute
-   
+@enduml

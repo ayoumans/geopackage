@@ -1,5 +1,4 @@
-classDiagram
-
+@startuml
    class MetadataEntityStore {
    }
    class MetadataAttributeType {
@@ -64,3 +63,4 @@ classDiagram
    EntityType <|-- MetadataEntityType
    Metadata ..> MetadataEntityType
    MetadataEntityType ..> MetadataAttributeType
+@enduml

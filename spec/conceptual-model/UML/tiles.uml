@@ -1,4 +1,4 @@
-classDiagram
+@startuml
 
    class Tile {
      id: Integer
@@ -42,3 +42,4 @@ classDiagram
    Entity o-- "1..*" Attribute
    TileAttributeType <.. TileAttribute
    Tile --> TileAttribute
+@enduml

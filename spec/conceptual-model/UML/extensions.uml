@@ -1,5 +1,4 @@
-classDiagram
-
+@startuml
    class Extension {
      title: String
      definition: String
@@ -14,3 +13,4 @@ classDiagram
    Extension --> "*" EntityStore
    Extension --> "*" AttributeType
    EntityStore o-- "*" AttributeType
+@enduml

@@ -1,4 +1,4 @@
-classDiagram
+@startuml
 
    class CoordinateReferenceSystem {
      title: String
@@ -60,3 +60,4 @@ classDiagram
    Entity ..> EntityType
    Entity o-- "*" Attribute
    Attribute ..> AttributeType
+@enduml

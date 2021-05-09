@@ -1,5 +1,4 @@
-classDiagram
-
+@startuml
    class TiledGriddedCoverage {
      id: Integer
      dataType = tiles
@@ -37,3 +36,4 @@ classDiagram
    Tile <|-- CoverageTile
    TiledGriddedCoverage o-- "*" CoverageTile
    TilePyramid o-- "*" Tile
+@enduml

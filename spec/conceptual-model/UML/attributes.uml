@@ -1,6 +1,7 @@
-classDiagram
+@startuml
 
    class AttributesStore {
      dataType = ATTRIBUTES
    }
    EntityStore <|.. AttributesStore
+@enduml
