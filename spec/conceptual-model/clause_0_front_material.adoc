@@ -1,13 +1,13 @@
 [big]*i.     Abstract*
 
-This document presents conceptual and logical models for GeoPackage.
-The intent is that these models can be used to implement GeoPackage in something other than an SQLite database.
+This document presents conceptual and logical models for GeoPackage, which will convey the fundamental principles, functionality, and foundation for the existing GeoPackage standard. 
+This specification will not only complete the existing GeoPackage standard, but these models could be used to implement GeoPackage in other formats and encodings rather than the traditional SQLite container.   
 
 [big]*ii.    Keywords*
 
 The following are keywords to be used by search engines and document catalogues.
 
-ogcdoc, OGC document, <tags separated by commas>
+ogcdoc, OGC document, conceptual, logical, model, logical model, conceptual model, GeoPackage
 
 [big]*iii.   Preface*
 
