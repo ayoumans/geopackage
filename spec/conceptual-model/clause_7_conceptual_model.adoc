@@ -76,6 +76,9 @@ The Tiles Requirements Class implements Tile Matrix Sets as per OGC 17-083r2.
 The definitions of the concepts below are from that document unless otherwise indicated.
 
 Tile::
+
+  geometric shape with known properties that may or may not be the result of a tiling (tessellation) process. A tile consists of a single connected "piece" (topological disc) without "holes" or "lines" [OGC 19-014r3] +
+  +
   a small rectangular representation of geographic data, often part of a set of such elements, covering a tiling scheme and sharing similar information content and graphical styling. A tile can be uniquely defined in a tile matrix by one integer index in each dimension. Tiles are mainly used for fast transfer (particularly in the web) and easy display at the resolution of a rendering device. Tiles can be grid based pictorial representations, coverage subsets, or feature based representations (e.g., vector tiles).
   _In the GES, a tile is realized through a row of a user-defined tiles table._
 
@@ -90,13 +93,15 @@ A tile matrix constitutes a tessellation of the space that resembles a matrix in
 
 Tile Matrix Set::
   a tiling scheme composed by collection of tile matrices defined at different scales covering approximately the same area and has a common coordinate reference system.
-  _In the GES, a tile matrix set is realized through a row of `gpkg_tile_matrix_set`._
+   _In the GES, a tile matrix set is realized through a row of `gpkg_tile_matrix_set`._
 
 Tile Pyramid::
   a tile set organized in pyramid structure of tiles of different spatial extent and resolution at different zoom levels.
   _In the GES, a tile pyramid is realized through a user-defined tiles table and a row of `gpkg_contents`._
   
 Tile Set::
+  set of tiles - a collection of subsets of the space being partitioned [OGC 19-014r3]. + 
+  + 
   a series of actual tiles containing data and following a common tiling scheme.
 
 Tiling Scheme::
